@@ -18,7 +18,11 @@ android {
         }
     }
 }
+android {
 
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+}
 dependencies {
 //    androidTestCompile('com.android.support:support-annotations:26.1.0') {
 //        force = true
