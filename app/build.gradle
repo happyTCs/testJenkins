@@ -3,6 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     buildToolsVersion '26.0.2'
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
     defaultConfig {
         applicationId "xu.walt.com.testjenkins"
         minSdkVersion 15
@@ -18,11 +20,7 @@ android {
         }
     }
 }
-android {
 
-    aaptOptions.cruncherEnabled = false
-    aaptOptions.useNewCruncher = false
-}
 dependencies {
 //    androidTestCompile('com.android.support:support-annotations:26.1.0') {
 //        force = true
